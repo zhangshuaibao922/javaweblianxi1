@@ -18,7 +18,8 @@
 						<td colspan="4"> 对不起，我测尼玛！</td>
 					</tr>
 					<tr th:unless="${#lists.isEmpty(session.fruitList)}" th:each="fruit : ${session.fruitList}">
-						<td th:text="${fruit.fname}"></td>
+						<!--<td><a th:text="${fruit.fname}" th:href="@{'/edit.do?fid='+${fruit.fid}}"></a></td>-->
+						<td><a th:text="${fruit.fname}" th:href="@{/edit(fid=${fruit.fid})}"></a></td>
 						<td th:text="${fruit.price}"></td>
 						<td th:text="${fruit.fcount}"></td>
 						<td><img src="imgs/del.jpg" class="delImg"/></td>

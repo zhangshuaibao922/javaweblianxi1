@@ -11,4 +11,7 @@ import java.util.List;
 public interface FruitDAO {
     //获取所有的库存列表
     public List<Fruit> getFruitList();
+
+    //根据fid获取特定的fruit
+    public Fruit getFruitById(Integer fid);
 }
