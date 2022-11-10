@@ -1,4 +1,4 @@
-package com.atguigu.fruit.pojo.com.atguigu.myssm.myspringmvc;
+package com.myssm.myspringmvc;
 
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;

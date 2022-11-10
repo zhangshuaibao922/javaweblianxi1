@@ -1,4 +1,4 @@
-package com.atguigu.fruit.pojo.com.atguigu.myssm.util;
+package com.myssm.util;
 
 /**
  * @author Ricardo

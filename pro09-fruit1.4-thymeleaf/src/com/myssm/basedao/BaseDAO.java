@@ -1,4 +1,4 @@
-package com.atguigu.fruit.pojo.com.atguigu.myssm.basedao;
+package com.myssm.basedao;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
@@ -87,10 +87,11 @@ public abstract class BaseDAO<T> {
             }
             setParams(psmt,params);
             int count = psmt.executeUpdate() ;
-
-            rs = psmt.getGeneratedKeys();
-            if(rs.next()){
-                return ((Long)rs.getLong(1)).intValue();
+            if(insertFlag){
+                rs = psmt.getGeneratedKeys();
+                if(rs.next()){
+                    return ((Long)rs.getLong(1)).intValue();
+                }
             }
             return count ;
         } catch (SQLException e) {

@@ -1,11 +1,11 @@
-package servlets;
+package com.atguigu.fruit.servlets;
 
 
 import com.atguigu.fruit.dao.FruitDAO;
 import com.atguigu.fruit.dao.com.atguigu.fruit.dao.impl.FruitDAOImpl;
 import com.atguigu.fruit.pojo.Fruit;
-import com.atguigu.fruit.pojo.com.atguigu.myssm.myspringmvc.ViewBaseServlet;
-import com.atguigu.fruit.pojo.com.atguigu.myssm.util.StringUtil;
+import com.myssm.myspringmvc.ViewBaseServlet;
+import com.myssm.util.StringUtil;
 
 
 import javax.servlet.ServletException;
